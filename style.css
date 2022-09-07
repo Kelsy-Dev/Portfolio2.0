@@ -1,0 +1,90 @@
+body {
+    background-color: aliceblue;
+    background:linear-gradient(to right, rgb(245, 207, 81), rgb(228, 112, 112));
+}
+.img-responsive {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+/*------ICON TRANSITIONS-------
+-------------------------------*/
+
+.fa-icon.fa-icon-2x {
+    color: white;
+    transition-duration: 0.5s;
+    transition-property: all;
+}
+.fa-icon.fa-icon-2x.tw:hover {
+    color: aqua;
+    transform: translateY(-5px);
+}
+.fa-icon.fa-icon-2x.git:hover {
+    color: black;
+    transform: translateY(-5px);
+}
+.fa-icon.fa-icon-2x.in:hover {
+    color: #0072b1;
+    transform: translateY(-5px);
+}
+
+/*------CARD TRANSITIONS-------
+-------------------------------*/
+
+.card, .card-block{
+    background-color: rgb(230, 228, 228);
+    border-radius: 20px;
+}
+.card-block {
+    transition-duration: 0.5s;
+    transition-property: all;
+}
+.card-block:hover {
+    /* background-color: lightgray; */
+    transform: scale(1.05);
+}
+
+
+
+
+
+
+html {
+    height:100%;
+  }
+  
+  body {
+    margin:0;
+  }
+  
+  .bg {
+    animation:slide 20s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, rgb(246, 234, 99) 50%, rgb(237, 115, 115) 50%);
+    bottom:0;
+    left:-50%;
+    opacity:.5;
+    position:fixed;
+    right:-50%;
+    top:0;
+    z-index:-1;
+  }
+  
+  .bg2 {
+    animation-direction:alternate-reverse;
+    animation-duration:30s;
+  }
+  
+  .bg3 {
+    animation-duration:31s;
+  }
+  
+  
+  @keyframes slide {
+    0% {
+      transform:translateX(-25%);
+    }
+    100% {
+      transform:translateX(25%);
+    }
+  }
