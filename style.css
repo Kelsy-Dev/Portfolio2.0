@@ -7,6 +7,7 @@ body {
     border-radius: 10px;
 }
 
+
 /*------ICON TRANSITIONS-------
 -------------------------------*/
 
@@ -28,6 +29,9 @@ body {
     transform: translateY(-5px);
 }
 
+
+
+
 /*------CARD TRANSITIONS-------
 -------------------------------*/
 
@@ -44,19 +48,32 @@ body {
     transform: scale(1.05);
 }
 
-.social-buttons.lol a:hover {
-  color: yellow;
-}
-span.social-round-icon.fa-icon:hover {
+
+
+/* ----------Social Network---------
+------------------------------------ */
+
+.social-buttons a:hover .social-round-icon{
   background-color: aqua;
-  color: white;
-  border: 1px solid black;
+  color:#fff;
+  border-color: black;
   transform: scale(1.09);
 }
-span.social-round-icon.fa-icon.git:hover {
+.social-buttons a:hover .social-round-icon.git{
   background-color: black;
 }
+.social-buttons a:hover .social-round-icon.lk{
+  background-color: #0072b1;
+}
 
+.social-buttons a:hover {
+  color: #8c4560;
+}
+
+
+
+/* ------Animated Background--------
+------------------------------------ */
 
 
 /* 
@@ -87,7 +104,7 @@ body {
 
 
 
-/* html {
+html {
     height:100%;
   }
   
@@ -124,4 +141,4 @@ body {
     100% {
       transform:translateX(25%);
     }
-  } */
+  }
