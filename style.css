@@ -1,5 +1,5 @@
 body {
-    background: none;
+    background: linear-gradient(to right, orange, yellow);
 }
 .img-responsive {
     width: 200px;
@@ -43,6 +43,21 @@ body {
     /* background-color: lightgray; */
     transform: scale(1.05);
 }
+
+.social-buttons.lol a:hover {
+  color: yellow;
+}
+span.social-round-icon.fa-icon:hover {
+  background-color: aqua;
+  color: white;
+  border: 1px solid black;
+  transform: scale(1.09);
+}
+span.social-round-icon.fa-icon.git:hover {
+  background-color: black;
+}
+
+
 
 /* 
 html, body {
