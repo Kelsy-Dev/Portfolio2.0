@@ -39,13 +39,29 @@ body {
     background-color: rgb(230, 228, 228);
     border-radius: 20px;
 }
-.card-block {
+.card-block, .iconn {
     transition-duration: 0.5s;
     transition-property: all;
 }
 .card-block:hover {
     /* background-color: lightgray; */
     transform: scale(1.05);
+}
+.card-block:hover .iconn{
+  transform: translateY(-5px);
+  color: green;
+}
+.card-block:hover .iconn.pj{
+  color: rgb(183, 168, 5);
+}
+.card-block:hover .iconn.one{
+  color: rgb(114, 88, 7);
+}
+.card-block:hover .iconn.social{
+  color: rgb(0, 111, 170);
+}
+.card-block:hover .iconn.ennd{
+  color: #ff396b;
 }
 
 
