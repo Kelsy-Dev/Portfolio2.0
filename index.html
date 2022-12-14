@@ -38,6 +38,7 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
   
+  <link href="bootstrap-icons-1.10.2/bootstrap-icons.css" rel="stylesheet">
 
   <title>Kelsy Mnk</title>  
 
@@ -46,9 +47,22 @@
 </head>
 
 <body>
+
+  <!-- Dark Mode Switch -->
+  <div class="theme-switch-wrapper">
+    <span id="toggle-icon">
+      <span class="toggle-text">Dark Mode</span>
+      <i class="bi bi-moon-fill"></i>
+    </span>
+    <label class="theme-switch">
+      <input type="checkbox">
+      <div class="slider round"></div>
+    </label>
+  </div>
+
   <div class="bg"></div>
-<div class="bg bg2"></div>
-<div class="bg bg3"></div>
+  <div class="bg bg2"></div>
+  <div class="bg bg3"></div>
 
 
 
@@ -100,6 +114,7 @@
               <p> I’m <strong>Kelsy Manonko</strong>, an aspiring self-taught web developer who's passionated about the web and all the process happening behind the scene. 
                 <br>I really enjoy solving problems as well as making things pretty and easy to use.
                  <br><br> Since younger, I've always dreamt of being a developer and can't wait to share all my skills and experience into crafting beautiful looking websites.</p>
+                 <p>During my free time, I like to work on personal projects or write blogs.</p>
 
               </div>
             </div>
@@ -126,8 +141,8 @@
               </div>
               <div class="col-md-4">
                 <img src="./assets/images/coming-soon-page.jpeg" class="img-responsive" alt="">
-                <h3 class="h5"></h3>
-                <p>Coming Soon!</p>
+                <h3 class="h5">Coming Soon!</h3>
+                
               </div>
             </div>
           </div>
@@ -279,6 +294,7 @@
      scrollRevelation('.card');
   });
 </script>
+<script defer src="./main.js"></script>
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID 
 
 <script>
