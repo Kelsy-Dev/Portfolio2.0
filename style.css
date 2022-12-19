@@ -2,15 +2,19 @@
   --primary-color: rgb(230, 228, 228);
   --border-color: #805B31;
   --on-background: #efeee5;
+  --on-background-two: #734b0f;
   --shadow-color: grey;
   --input-color: white;
   --placeholder-color: grey;
+  --name-color: #4d4236;
 }
 [data-theme="dark"] {
   --primary-color: #252525;
   --shadow-color: black;
+  --name-color: #8a8681;
   --border-color: black;
-  --on-background: #1F1B0F;
+  --on-background: #2d2d2c;
+  --on-background-two: black;
   --font-color: #efeee5;
   --placeholder-color: #6c6767;
   --paragraph-color: #AAAAA7;
@@ -84,7 +88,7 @@ body, h2, .h5, .social-round-icon, .social-buttons a {
 }
 
 input:checked + .slider {
-  background: #805B31;
+  background: rgb(89 86 82);
 }
 input:checked + .slider::before {
 transform: translateX(26px);
@@ -110,7 +114,7 @@ transform: translateX(26px);
 /*------ANIMATED CSS-------
 -------------------------------*/
 .hi {
-  color: #805B31;
+  color: var(--name-color);
   animation: fadeInLeft;
   animation-duration: 1s;
 }
@@ -260,7 +264,7 @@ html {
   
   .bg {
     animation:slide 40s ease-in-out infinite alternate;
-    background-image: linear-gradient(-60deg, var(--on-background) 50%, var(--shadow-color) 50%);
+    background-image: linear-gradient(-60deg, var(--on-background) 50%, var(--on-background-two) 50%);
     bottom:0;
     left:-50%;
     opacity: .5;
